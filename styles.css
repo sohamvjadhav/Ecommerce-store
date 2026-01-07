@@ -58,6 +58,7 @@ body {
     line-height: 1.6;
     background-color: #f6f4f1;
     -webkit-font-smoothing: antialiased;
+    letter-spacing: 0.3px;
     overscroll-behavior: none;
     overflow-x: hidden;
 }
@@ -128,6 +129,7 @@ h5 {
 p {
     color: #000000;
     margin-bottom: 16px;
+    letter-spacing: 0.3px;
 }
 
 .lead-text {
@@ -969,6 +971,7 @@ footer {
     color: #e4ded2;
     font-size: 14px;
     margin-top: 16px;
+    letter-spacing: 0.3px;
 }
 
 .footer-brand .logo {
@@ -986,6 +989,7 @@ footer {
     font-size: 13px;
     color: #e4ded2;
     margin-bottom: 10px;
+    letter-spacing: 0.3px;
 }
 
 .contact-icon {
@@ -1025,6 +1029,7 @@ footer a {
     display: block;
     padding: 6px 0;
     font-size: 14px;
+    letter-spacing: 0.3px;
 }
 
 footer a:hover {

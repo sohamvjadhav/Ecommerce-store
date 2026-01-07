@@ -805,6 +805,32 @@ nav a:hover::after {
     font-weight: bold;
 }
 
+/* --- CONTACT PAGE GOLD ICONS --- */
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.contact-gold-icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+/* --- CART HEADER --- */
+.cart-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.cart-gold-icon {
+    width: 48px;
+    height: 48px;
+}
+
 /* --- CART --- */
 .cart-item {
     display: flex;

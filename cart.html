@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | Curated Store</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container flex-space-between">
+            <a href="index.html" class="logo">Curated<span>.</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html">Cart (3)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="container">
+            <h1 class="margin-bottom-xlarge">Your Cart</h1>
+
+            <div class="grid sidebar-layout">
+                <div>
+                    <div class="cart-item">
+                        <div class="cart-item-image">
+                            <img src="images/headphones.png" alt="Headphones">
+                        </div>
+                        <div class="cart-item-details">
+                            <h3>Sonic Pure Headphones</h3>
+                            <p class="text-muted">Midnight Black</p>
+                        </div>
+                        <div class="cart-item-price">₹29,665</div>
+                        <button class="button button-secondary button-small">Remove</button>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="cart-item-image">
+                            <img src="images/keyboard.png" alt="Keyboard">
+                        </div>
+                        <div class="cart-item-details">
+                            <h3>Mechanical Keyboard</h3>
+                            <p class="text-muted">Standard Layout</p>
+                        </div>
+                        <div class="cart-item-price">₹24,565</div>
+                        <button class="button button-secondary button-small">Remove</button>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="cart-item-image">
+                            <img src="images/lamp.png" alt="Lamp">
+                        </div>
+                        <div class="cart-item-details">
+                            <h3>Lumina Smart Lamp</h3>
+                            <p class="text-muted">White</p>
+                        </div>
+                        <div class="cart-item-price">₹16,065</div>
+                        <button class="button button-secondary button-small">Remove</button>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="cart-summary">
+                        <h3 class="margin-bottom-medium">Order Summary</h3>
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span>₹70,295</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="summary-total">
+                            <span>Total</span>
+                            <span>₹70,295</span>
+                        </div>
+                        <button class="button button-primary full-width margin-top-large">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">&copy; 2026 Curated Store. All rights reserved.</div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -875,6 +875,156 @@ nav a:hover::after {
     text-align: right;
 }
 
+/* Cart Item Quantity Selector */
+.cart-item-quantity {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cart-item-quantity label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+}
+
+.cart-item-quantity select {
+    padding: 8px 12px;
+    font-size: 14px;
+    font-family: inherit;
+    border: 1px solid #e4ded2;
+    background: #f6f4f1;
+    color: #000;
+    cursor: pointer;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 32px;
+}
+
+.cart-item-quantity select:hover {
+    border-color: #ff7f29;
+}
+
+.cart-item-quantity select:focus {
+    outline: none;
+    border-color: #ff7f29;
+    box-shadow: 0 0 0 3px rgba(255, 127, 41, 0.15);
+}
+
+/* Coupon Code Field */
+.coupon-field {
+    margin-bottom: 20px;
+}
+
+.coupon-field label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.coupon-input-group {
+    display: flex;
+    gap: 8px;
+}
+
+.coupon-input-group input {
+    flex: 1;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-family: inherit;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: #fff;
+    color: #000;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.coupon-input-group input::placeholder {
+    color: #999;
+}
+
+.coupon-input-group input:focus {
+    outline: none;
+    border-color: #ff7f29;
+    box-shadow: 0 0 0 3px rgba(255, 127, 41, 0.15);
+}
+
+.coupon-input-group .button {
+    flex-shrink: 0;
+}
+
+/* Gift Wrap Checkbox */
+.gift-wrap-field {
+    padding: 16px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #000;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #ff7f29;
+    cursor: pointer;
+}
+
+.checkbox-label span {
+    user-select: none;
+}
+
+/* Order Notes Textarea */
+.order-notes-field {
+    margin-top: 16px;
+}
+
+.order-notes-field label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.order-notes-field textarea {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 14px;
+    font-family: inherit;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: #fff;
+    color: #000;
+    resize: vertical;
+    min-height: 80px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.order-notes-field textarea::placeholder {
+    color: #999;
+}
+
+.order-notes-field textarea:focus {
+    outline: none;
+    border-color: #ff7f29;
+    box-shadow: 0 0 0 3px rgba(255, 127, 41, 0.15);
+}
+
+/* Margin Utility */
+.margin-top-medium {
+    margin-top: 16px;
+}
+
 .cart-summary {
     background: #e4ded2;
     border-radius: 0;

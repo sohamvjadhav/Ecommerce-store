@@ -14,7 +14,7 @@
 }
 
 .breadcrumb a:hover {
-    color: #ff7f29;
+    color: #ff5e00;
 }
 
 .product-grid {
@@ -73,7 +73,7 @@
 
 .thumbnail:hover,
 .thumbnail.active {
-    border-color: #ff7f29;
+    border-color: #ff5e00;
     border-width: 2px;
 }
 
@@ -85,7 +85,7 @@
 .product-price {
     font-size: 32px;
     font-weight: 700;
-    color: #ff7f29;
+    color: #ff5e00;
     margin-bottom: 24px;
 }
 
@@ -123,13 +123,13 @@
 }
 
 .option-button:hover {
-    border-color: #ff7f29;
+    border-color: #ff5e00;
 }
 
 .option-button.active {
-    background: #ff7f29;
+    background: #ff5e00;
     color: #f6f4f1;
-    border-color: #ff7f29;
+    border-color: #ff5e00;
 }
 
 .product-buttons {
@@ -162,7 +162,7 @@
     content: '✓';
     position: absolute;
     left: 0;
-    color: #ff7f29;
+    color: #ff5e00;
     font-weight: bold;
 }
 
@@ -253,7 +253,7 @@
 .cart-item-price {
     font-size: 18px;
     font-weight: 700;
-    color: #ff7f29;
+    color: #ff5e00;
     min-width: 80px;
     text-align: right;
 }
@@ -289,12 +289,12 @@
 }
 
 .cart-item-quantity select:hover {
-    border-color: #ff7f29;
+    border-color: #ff5e00;
 }
 
 .cart-item-quantity select:focus {
     outline: none;
-    border-color: #ff7f29;
+    border-color: #ff5e00;
     box-shadow: 0 0 0 3px rgba(255, 127, 41, 0.15);
 }
 
@@ -333,7 +333,7 @@
 
 .coupon-input-group input:focus {
     outline: none;
-    border-color: #ff7f29;
+    border-color: #ff5e00;
     box-shadow: 0 0 0 3px rgba(255, 127, 41, 0.15);
 }
 
@@ -359,7 +359,7 @@
 .checkbox-label input[type="checkbox"] {
     width: 18px;
     height: 18px;
-    accent-color: #ff7f29;
+    accent-color: #ff5e00;
     cursor: pointer;
 }
 
@@ -399,7 +399,7 @@
 
 .order-notes-field textarea:focus {
     outline: none;
-    border-color: #ff7f29;
+    border-color: #ff5e00;
     box-shadow: 0 0 0 3px rgba(255, 127, 41, 0.15);
 }
 
@@ -474,7 +474,7 @@
 }
 
 .newsletter-form .button {
-    background: #ff7f29;
+    background: #ff5e00;
     color: #f6f4f1;
 }
 
@@ -532,7 +532,7 @@ footer {
 }
 
 footer h5 {
-    color: #ff7f29;
+    color: #ff5e00;
     margin-bottom: 24px;
 }
 
@@ -562,7 +562,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #ff7f29;
+    color: #ff5e00;
     opacity: 1;
 }
 

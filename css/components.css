@@ -325,7 +325,7 @@ nav a:hover::after {
 /* --- HERO --- */
 .hero {
     min-height: 100vh;
-    padding: 140px 0 100px;
+    padding: 60px 0 100px;
     background-color: #e4ded2;
     background-image: url('../images/frame.png');
     background-size: cover;
@@ -340,8 +340,8 @@ nav a:hover::after {
 .hero .container {
     background: #ffffff;
     border: 0.7px solid rgba(0, 0, 0, 0.08);
-    padding: 80px 60px;
-    max-width: 900px;
+    padding: 50px 40px;
+    max-width: 700px;
     width: 90%;
     border-radius: 0;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);

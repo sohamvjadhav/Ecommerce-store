@@ -120,11 +120,11 @@
     transition: border-color 0.3s ease;
 }
 
-.card:hover {
+/* .card:hover {
     transform: translateY(-8px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
     z-index: 10;
-}
+} */
 
 .card:hover::after {
     border-color: transparent;
@@ -148,7 +148,7 @@
 }
 
 .card:hover .card-image img {
-    transform: scale(1.05);
+    transform: scale(1.04);
 }
 
 .card-image::after {
@@ -237,14 +237,14 @@ textarea.form-input {
 header {
     position: sticky;
     top: 0;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgb(255, 255, 255);
     border-bottom: 1px solid #ff5e00;
     padding: 16px 0;
 }
 
 header.scrolled {
     padding: 12px 0;
-    background: rgba(255, 255, 255, 0.85);
+    background: rgb(255, 255, 255);
 }
 
 header .container {
@@ -324,8 +324,8 @@ nav a:hover::after {
 
 /* --- HERO --- */
 .hero {
-    min-height: 100vh;
-    padding: 60px 0 100px;
+    min-height: 92vh;
+    padding: 140px 0 100px;
     background-color: #e4ded2;
     background-image: url('../images/frame.png');
     background-size: cover;
@@ -340,17 +340,13 @@ nav a:hover::after {
 .hero .container {
     background: #ffffff;
     border: 0.7px solid rgba(0, 0, 0, 0.08);
-    padding: 50px 40px;
-    max-width: 700px;
-    width: 90%;
+    border-bottom: 1px solid #ff5e00;
+    padding: 60px 40px;
+    max-width: 800px;
+    width: 85%;
     border-radius: 0;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
     transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-.hero:hover .container {
-    transform: translateY(-5px);
-    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.12);
 }
 
 .hero h1,

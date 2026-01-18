@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Curated Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container flex-space-between">
+            <a href="index.html" class="logo">Curated<span>.</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html">Cart (3)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="container">
+            <div class="checkout-header margin-bottom-xlarge">
+                <a href="cart.html" class="back-link">← Back to Cart</a>
+                <h1>Checkout</h1>
+            </div>
+
+            <div class="grid checkout-layout">
+                <!-- Shipping Form -->
+                <div class="checkout-form-container">
+                    <div class="checkout-form-box">
+                        <h3 class="margin-bottom-large">Shipping Details</h3>
+
+                        <form id="shipping-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="full-name">Full Name *</label>
+                                    <input type="text" id="full-name" name="full-name" required placeholder="John Doe">
+                                </div>
+                            </div>
+
+                            <div class="form-row two-col">
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" required placeholder="john@example.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone *</label>
+                                    <input type="tel" id="phone" name="phone" required placeholder="+91 98765 43210">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="address">Street Address *</label>
+                                    <input type="text" id="address" name="address" required
+                                        placeholder="42, Linking Road">
+                                </div>
+                            </div>
+
+                            <div class="form-row three-col">
+                                <div class="form-group">
+                                    <label for="city">City *</label>
+                                    <input type="text" id="city" name="city" required placeholder="Mumbai">
+                                </div>
+                                <div class="form-group">
+                                    <label for="state">State *</label>
+                                    <input type="text" id="state" name="state" required placeholder="Maharashtra">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pincode">Pincode *</label>
+                                    <input type="text" id="pincode" name="pincode" required placeholder="400050"
+                                        pattern="[0-9]{6}">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="checkout-summary-container">
+                    <div class="checkout-summary">
+                        <h3 class="margin-bottom-medium">Order Summary</h3>
+
+                        <div class="checkout-items">
+                            <div class="checkout-item">
+                                <div class="checkout-item-image">
+                                    <img src="images/headphones.png" alt="Headphones">
+                                </div>
+                                <div class="checkout-item-details">
+                                    <span class="item-name">Sonic Pure Headphones</span>
+                                    <span class="item-qty">Qty: 1</span>
+                                </div>
+                                <div class="checkout-item-price">₹29,665</div>
+                            </div>
+
+                            <div class="checkout-item">
+                                <div class="checkout-item-image">
+                                    <img src="images/keyboard.png" alt="Keyboard">
+                                </div>
+                                <div class="checkout-item-details">
+                                    <span class="item-name">Mechanical Keyboard</span>
+                                    <span class="item-qty">Qty: 1</span>
+                                </div>
+                                <div class="checkout-item-price">₹24,565</div>
+                            </div>
+
+                            <div class="checkout-item">
+                                <div class="checkout-item-image">
+                                    <img src="images/lamp.png" alt="Lamp">
+                                </div>
+                                <div class="checkout-item-details">
+                                    <span class="item-name">Lumina Smart Lamp</span>
+                                    <span class="item-qty">Qty: 1</span>
+                                </div>
+                                <div class="checkout-item-price">₹16,065</div>
+                            </div>
+                        </div>
+
+                        <div class="summary-divider"></div>
+
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span>₹70,295</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping</span>
+                            <span class="free-shipping">Free</span>
+                        </div>
+                        <div class="summary-total">
+                            <span>Total</span>
+                            <span id="order-total">₹70,295</span>
+                        </div>
+
+                        <!-- Razorpay Payment Button -->
+                        <div class="razorpay-button-wrapper margin-top-large">
+                            <form>
+                                <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                                    data-payment_button_id="pl_S5BbQLzybBxzlV" async>
+                                    </script>
+                            </form>
+                        </div>
+
+                        <div class="secure-badge margin-top-medium">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            <span>Secure payment powered by Razorpay</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">&copy; 2026 Curated Store. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <style>
+        /* Style the Razorpay button wrapper to make it full width */
+        .razorpay-button-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+
+</body>
+
+</html>
